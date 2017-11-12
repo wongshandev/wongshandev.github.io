@@ -151,7 +151,208 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-APP架构设计关健技术应用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#APP架构设计关健技术应用<br>[TOC]</p>
+<p>##1、服务器架构<br>| 项目      |    内容 | 等级  |<br>| :——– | ——–:| :–: |<br>| 服务器环境与选型 | aliyun linux操作系统 | ★★★★☆ |<br>| CDN服务器   |   七牛云 | ★★★★☆   |<br>| 反向代理服务  |     | ★★★★☆  |<br>| 负载匀衡服务  |     | ★★★★☆  |<br>| 分布式调度Dubbo  | 用户服务，订单服务，支付服务  | ★★★★☆  |<br>| 消息队列服务 |  | ★★★★☆  |<br>| 数据库服务 |  | ★★★★☆  |<br>| HTTPS SSL加密协议|  | ★★★★☆  |<br>| 身份证身份管理后台人工核对|  | ★★★★☆  |</p>
+<p>总体架构图：<br><img src="http://ohpd6jl54.bkt.clouddn.com/nnn.jpeg" alt=""></p>
+<p>##2、APP架构</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:right">内容</th>
+<th style="text-align:center">等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">HTTPS SLL</td>
+<td style="text-align:right">加密协议</td>
+<td style="text-align:center">★★★★★</td>
+</tr>
+<tr>
+<td style="text-align:left">代码加壳，保护应用和SDK代码，防止反编译</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★★★★</td>
+</tr>
+<tr>
+<td style="text-align:left">隐藏本地数据处理逻辑，防止数据被窥探</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★★★☆</td>
+</tr>
+<tr>
+<td style="text-align:left">安全态势感知和运行环境检测，保障应用运行安全</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★★★☆</td>
+</tr>
+<tr>
+<td style="text-align:left">结合代码混淆技术，增加解析代码难度</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★★★★</td>
+</tr>
+<tr>
+<td style="text-align:left">jpush推送</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★☆☆☆</td>
+</tr>
+<tr>
+<td style="text-align:left">短信服务</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★☆☆☆</td>
+</tr>
+<tr>
+<td style="text-align:left">身份证采集简单核对</td>
+<td style="text-align:right"></td>
+<td style="text-align:center">★★☆☆☆</td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wongshan.me/2017/11/12/APP架构设计关健技术应用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">创建第一个文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+  <div id="SOHUCS" sid="APP架构设计关健技术应用" ></div> 
+<script type="text/javascript"> 
+window.YiliaChangyanWrap = function() {
+    var appid = "cytjmAYNJ"; 
+    var conf = "prod_6078859fd9c5ca3ded0b3d651883b995"; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+}
+</script>
+  
+
+  
+
+  
+
+
           </div>
         </div>
       </div>
